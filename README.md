@@ -1,3 +1,5 @@
+NFT Contract Address = "0x97398fc9f7EA6C6bE4D14ded75e196eF763E205d"
+
 # RealMint
 About Us
 RealMint is an innovative platform dedicated to creating authentic, decentralized NFTs (Non-Fungible Tokens). We believe in the power of blockchain technology and are committed to fostering a fair, decentralized environment for NFT creators.
