@@ -1,0 +1,34 @@
+
+
+.nav {
+
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    border: 1px solid red;
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: #000;
+    z-index: 999999;
+}
+
+.nav .nav_container {
+
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+
+.nav .nav_logo {
+
+    max-width: 80px;
+}
+
+.nav_logo img {
+
+    width: 100%;
+}

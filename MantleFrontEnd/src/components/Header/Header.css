@@ -1,0 +1,122 @@
+
+.header {
+
+    height: 100vh;
+
+    position: relative;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(44,17,93,1) 27%, rgba(120,16,84,1) 100%);
+}
+
+
+
+
+  .header .header_container {
+
+    max-width: 95vw;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .header .header_content {
+
+    margin-top: 6rem;
+  }
+
+  .header h1 {
+
+    color: #fff;
+    font-size: 5rem;
+    font-family: barlow;
+    margin-bottom: 1rem;
+    max-width: 800px;
+  }
+
+  .header p {
+
+    color: #fff;
+    font-size: 1.8rem;
+  }
+
+
+  .header .header_btn{
+
+    position: relative;
+    display: inline-block;
+    display: flex;
+    width: max-content;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    cursor: pointer;
+  }
+
+  .header .header_btn w3m-core-button{
+
+    position: relative;
+    z-index: 9;
+    opacity: 0;
+    padding: 0.6rem 2rem;
+  }
+
+  .header .header_btn span{
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: linear-gradient(90deg, rgb(76, 36, 152) 27%, rgba(120,16,84,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .header .header_btn w3m-core-button:hover + span {
+
+    background: linear-gradient(275deg, rgb(76, 36, 152) 27%, rgba(120,16,84,1) 100%);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .header .header_btn w3m-core-button:hover + .header_btn_conainer span,
+  .header .header_btn w3m-core-button:hover + .header_btn_conainer .disConnect {
+
+    background: linear-gradient(275deg, rgb(76, 36, 152) 27%, rgba(120,16,84,1) 100%);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .header .header_btn w3m-core-button:hover + .header_btn_conainer span{
+
+    z-index: -1;
+  }
+
+
+  @media (max-width: 1200px) {
+
+    .header h1 {
+
+        font-size: 4rem;
+    }
+  }
+
+
+  @media (max-width: 768px) {
+
+    .header h1 {
+
+        font-size: 3rem;
+    }
+
+    .header .header_container {
+
+        padding: 0 1rem;
+    }
+  }

@@ -1,0 +1,155 @@
+
+.steps {
+
+    padding: 8rem 0 5rem 0;
+}
+
+.steps .steps_container {
+
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 2rem;
+
+    color: #fff;
+}
+
+.steps h2 {
+
+    font-size: 4rem;
+    margin-bottom: 6rem;
+}
+
+.steps .steps_grid {
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    position: relative;
+}
+
+
+
+.steps .steps_grid .card {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.steps .steps_grid .card h4{
+
+
+    font-size: 6rem;
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #000;
+    margin-bottom: 3rem;
+}
+.steps .steps_grid .card h4::before {
+
+    background: linear-gradient(90deg, rgb(76, 36, 152) 27%, rgba(120,16,84,1) 100%);
+    position: absolute;
+    content: '';
+    margin: auto;
+    width: calc(100% + 15px);
+    height: calc(100% + 15px);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.steps .steps_grid .card h4::after {
+
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -250px;
+    margin: auto 0;
+    width: 200px;
+    height: 4px;
+    background: linear-gradient(90deg, rgb(76, 36, 152) 27%, rgba(120,16,84,1) 100%);
+}
+
+.steps .steps_grid .card:nth-child(3) h4::after,
+.steps .steps_grid .card:nth-child(4) h4::after {
+    display: none;
+}
+
+.steps .steps_grid .card p {
+
+    font-size: 2rem;
+}
+
+
+
+@media (max-width: 1350px) {
+
+    .steps .steps_grid .card h4::after {
+
+        right: -14.5vw;
+        width: 87%;
+    }
+
+    .steps .steps_grid .card h4 {
+        font-size: 4rem;
+        width: 100px;
+        height: 100px;
+    }
+
+    .steps .steps_grid .card p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .steps .steps_container {
+
+        padding: 0 1rem;
+    }
+}
+
+
+@media (max-width: 767px) {
+
+    .steps .steps_grid {
+
+        grid-template-columns: repeat(1,1fr);
+        gap: 7rem;
+    }
+
+    .steps .steps_grid .card h4 {
+
+        margin-bottom: 2rem;
+    }
+
+    .steps .steps_grid .card h4::after {
+
+        display: none;
+    }
+
+    .steps .steps_grid .card {
+
+        position: relative;
+    }
+
+    .steps .steps_grid .card::before {
+
+        content: '';
+        position: absolute;
+        height: 60px;
+        width: 2px;
+        background: linear-gradient(90deg, rgb(76, 36, 152) 27%, rgba(120,16,84,1) 100%);
+        bottom: -80px;
+    }
+
+    .steps .steps_grid .card:nth-child(3)::before {
+
+        display: none;
+    }
+}
